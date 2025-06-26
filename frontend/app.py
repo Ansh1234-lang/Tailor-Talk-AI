@@ -26,7 +26,7 @@ if user_input:
 
     # Call backend
     try:
-        res = requests.post("https://tailor-talk-ai.onrender.com/chat", json={"message": user_input})
+        res = requests.post("http://localhost:8000/chat", json={"message": user_input})
         bot_reply = res.json().get("response", "Sorry, something went wrong.")
     except Exception as e:
         bot_reply = f"Error: {e}"
