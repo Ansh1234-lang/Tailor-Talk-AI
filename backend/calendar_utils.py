@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 SERVICE_ACCOUNT_FILE = "credentials.json"
 SCOPES = ['https://www.googleapis.com/auth/calendar']
-CALENDAR_ID = 'primary'  # or your actual calendar ID
+CALENDAR_ID = ['ansh.verma.av0608@gmail.com','shivkumarverma631@gmail.com']  # or your actual calendar 
 
 def get_calendar_service():
     credentials = Credentials.from_service_account_file(
